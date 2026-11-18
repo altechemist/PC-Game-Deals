@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PC Game Deals</title>
+    <style>
+      body {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px;
+        font-family: Arial, sans-serif;
+        color: #202124;
+      }
+
+      h1, h2 {
+        margin-bottom: 16px;
+      }
+
+      .game-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+      }
+
+      .game-card {
+        position: relative;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 16px;
+      }
+
+      .store {
+        color: #666;
+      }
+
+      .normal-price {
+        color: #777;
+        text-decoration: line-through;
+      }
+
+      .sale-price,
+      .discount {
+        color: #167d32;
+        font-weight: bold;
+      }
+
+      .sale-tag {
+        display: inline-block;
+        margin-bottom: 12px;
+        padding: 4px 8px;
+        border-radius: 4px;
+        background: #167d32;
+        color: #fff;
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      .price-label {
+        margin: 4px 0;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>PC Game Deals</h1>
+
+    <section aria-labelledby="games-heading">
+      <h2 id="games-heading">All Games</h2>
+      <div id="games-list" class="game-grid"></div>
+    </section>
+
+    <section aria-labelledby="sales-heading">
+      <h2 id="sales-heading">Games on Sale</h2>
+      <div id="sales-list" class="game-grid"></div>
+    </section>
+
+    <section aria-labelledby="cheapest-heading">
+      <h2 id="cheapest-heading">Cheapest Game Right Now</h2>
+      <div id="cheapest-game"></div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
