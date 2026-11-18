@@ -14,6 +14,13 @@ How do we run the project? Follow these steps:
 
 You can also open `index.html` directly, but using a local server is more reliable.
 
+## Assumptions
+
+- The displayed values are for browsing only; no currency conversion or purchase is included.
+- CheapShark prices are assumed to be in US dollars.
+- The page is assumed to run in a modern desktop or mobile browser with JavaScript enabled.
+- The project assumes internet access is available while loading live deals.
+
 ## Choices
 
 Why did you build it the way you did?
